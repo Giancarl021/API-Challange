@@ -1,0 +1,14 @@
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\bin\Debug\netcoreapp2.2\Server.deps.json
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\bin\Debug\netcoreapp2.2\Server.runtimeconfig.json
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\bin\Debug\netcoreapp2.2\Server.runtimeconfig.dev.json
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\bin\Debug\netcoreapp2.2\Server.dll
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\bin\Debug\netcoreapp2.2\Server.pdb
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.csprojAssemblyReference.cache
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.RazorAssemblyInfo.cache
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.RazorAssemblyInfo.cs
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.AssemblyInfoInputs.cache
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.AssemblyInfo.cs
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.RazorTargetAssemblyInfo.cache
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.dll
+C:\Users\Pichau\Documents\Git\API-Challenge\Server\obj\Debug\netcoreapp2.2\Server.pdb
