@@ -4,7 +4,7 @@
 
 #### 21 de Agosto de 2019
 
-Busquei aprender o básico dos conceitos de ASP.NET (C#) e REST, bem como definir o que seria necessário para mim fazer o projeto.
+Busquei aprender o básico dos conceitos de ASP.NET (C#) e REST, bem como definir o que seria necessário para fazer o projeto.
 
 Efetuei o download e instalação das ferramentas necessárias (Pacotes do Visual Studio 2017 e o .NET Core SDK).
 
@@ -18,7 +18,9 @@ Descobri um problema (aparentemente não resolvido) do Visual Studio 2017 com a 
 
 Iniciei a parte Back-End do projeto, usando de base um tutorial encontrado [aqui](https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-web-api?view=aspnetcore-2.2&tabs=visual-studio).
 
-### 23 de Agosto de 2019
+Tentei a instalação do mySQL em minha máquina porém fui mal-sucedido, com o CLI não efetuando login e na instalação não me foi permitido criar um novo usuário, além de qualquer tentativa de efetuar login como root a janela de login simplesmente fechar. Em razão destes problemas decidi manter o In-Memory Database, mesmo sabendo que não era este o objetivo, pois investir tempo nesta troca tornaria inviável completar a página que consome a API criada.
+
+#### 23 de Agosto de 2019
 
 ```
 Work in Progress
@@ -32,7 +34,7 @@ Work in Progress
 
 Utilizei do IDE da Microsoft para a parte Back-End do projeto, **WIP....**
 
-##### Postmam
+##### Postman
 
 ```
 Work in Progress
@@ -61,4 +63,6 @@ Work in Progress
 - Acredito que eu possa ter interpretado de forma errônea o objetivo da tarefa mostrada.
 - A linguagem C# possui uma sintaxe diferente de qualquer outra de já trabalhei. A falta de conhecimento e experiência fez falta.
 - O bug do Visual Studio com a versão do .NET Core SDK (documentado [aqui](https://github.com/dotnet/sdk/issues/3124)) custou-me um tempo valioso
-- Necessitei acelerar o desenvolvimento do projeto devido a um evento em que participei no dia de 23/08/2019, estando disponível para o projeto apenas à noite.
+- Não consegui conectar um banco de dados externo na aplicação, apenas utilizei o In-Memory Database da própria aplicação.
+- Não consegui criar um sistema de pesquisa eficiente, demandando do servidor fornecer um GET integral da base de dados para então filtrar no cliente os dados recebidos.
+- A falta de tempo me impediu de corrigir as falhas encontradas
