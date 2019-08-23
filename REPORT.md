@@ -46,7 +46,7 @@ Work in Progress
 
 Solução em C para gerar templates padrão de sites, com código fonte [aqui](https://github.com/Giancarl021/Site-Generator).
 
-##### JetBrains WebStorm 2019.1.3
+##### JetBrains WebStorm 2019.1.3/2019.2
 
 ```
 Work in Progess
