@@ -4,9 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Server.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Globalization;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Server.Controllers
 {
@@ -63,7 +60,7 @@ namespace Server.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<Pessoa>> PutPessoa(long id, Pessoa pessoa)
         {
-            if(id != pessoa.Id)
+            if (id != pessoa.Id)
             {
                 return BadRequest();
             }
@@ -74,9 +71,10 @@ namespace Server.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePessoa(long id) {
+        public async Task<IActionResult> DeletePessoa(long id)
+        {
             Pessoa pessoa = await _context.Pessoas.FindAsync(id);
-            if(pessoa == null)
+            if (pessoa == null)
             {
                 return NotFound();
             }
@@ -85,6 +83,6 @@ namespace Server.Controllers
 
             return NoContent();
         }
-
+        
     }
 }
