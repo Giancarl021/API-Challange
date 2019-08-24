@@ -14,6 +14,13 @@
 <body>
     <h1 class="cc-title">WORK IN PROGRESS...</h1>
     <div class="cc-container">
+        <input type="text" style="width: 40%" id="search">
+        <button type="button" onclick="search($('input[name=\'filter\']:checked').val())">Pesquisar</button>
+        <br/>
+        <strong>Filtro</strong>
+        <input type="radio" name="filter" value="0" checked>Nenhum
+        <input type="radio" name="filter" value="1">Nome
+        <input type="radio" name="filter" value="2">Email
         <table>
             <tr>
                 <th>Nome</th>

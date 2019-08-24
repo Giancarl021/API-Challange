@@ -78,7 +78,30 @@ async function getPessoasByEmail(search) {
 
 function renderTable(pessoas) {
     $('tr:not(:first)').remove();
+    if(pessoas.length === 0) return;
     pessoas.forEach(e => {
         $(`<tr><td>${e.nome}</td><td>${e.email}</td><td>${e.nasc}</td><td><button type="button" onclick="deletePessoa(${e.id})">Deletar</button></td></tr>`).appendTo('table');
     });
+}
+
+async function search(val) {
+    const selector = parseInt(val);
+    const search = $('#search').val();
+    if(search.trim() === '') {
+        renderTable(await getPessoas());
+        return;
+    }
+    switch(selector) {
+        case 0:
+            await getPessoasBySearch(search);
+            break;
+        case 1:
+            await getPessoasByName(search);
+            break;
+        case 2:
+            await getPessoasByEmail(search);
+            break;
+        default:
+            console.error('Filtro inválido selecionado');
+    }
 }
