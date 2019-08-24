@@ -22,9 +22,7 @@ Tentei a instalação do mySQL em minha máquina porém fui mal-sucedido, com o 
 
 #### 23 de Agosto de 2019
 
-```
-Work in Progress
-```
+Criei as requisições de pesquisas filtradas por Nome, E-Mail e ambos.
 
 ### Tecnologias Utilizadas
 
@@ -32,13 +30,11 @@ Work in Progress
 
 ##### Visual Studio 2019
 
-Utilizei do IDE da Microsoft para a parte Back-End do projeto, **WIP....**
+IDE da Microsoft com recursos para desenvolvimento em C#.
 
 ##### Postman
 
-```
-Work in Progress
-```
+Solução para testar requisições em APIs REST.
 
 #### Front-End
 
@@ -48,21 +44,15 @@ Solução em C para gerar templates padrão de sites, com código fonte [aqui](h
 
 ##### JetBrains WebStorm 2019.1.3/2019.2
 
-```
-Work in Progess
-```
+IDE da JetBrains para a construção de aplicativos Web.
 
 #### Git
 
-```
-Work in Progress
-```
+Versionador de código, utilizado para recuperar um código caso uma implementação dê errado
 
 ### Dificuldades Encontradas
 
 - Acredito que eu possa ter interpretado de forma errônea o objetivo da tarefa mostrada.
 - A linguagem C# possui uma sintaxe diferente de qualquer outra de já trabalhei. A falta de conhecimento e experiência fez falta.
-- O bug do Visual Studio com a versão do .NET Core SDK (documentado [aqui](https://github.com/dotnet/sdk/issues/3124)) custou-me um tempo valioso
+- O bug do Visual Studio com a versão do .NET Core SDK (documentado [aqui](https://github.com/dotnet/sdk/issues/3124)) custou-me um tempo razoável (reinstalação do Visual Studio).
 - Não consegui conectar um banco de dados externo na aplicação, apenas utilizei o In-Memory Database da própria aplicação.
-- Não consegui criar um sistema de pesquisa eficiente, demandando do servidor fornecer um GET integral da base de dados para então filtrar no cliente os dados recebidos.
-- A falta de tempo me impediu de corrigir as falhas encontradas
