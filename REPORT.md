@@ -62,7 +62,7 @@ Versionador de código, utilizado para recuperar um código caso uma implementa�
 
 ### *TODO*
 
-- Requisições ```POST``` e ```PUT``` no arquivo [javascript](js/script.js).
+- Requisições ```POST``` e ```PUT``` no arquivo [javascript](Server/wwwroot/js/script.js).
 
 - Migrar de banco de dados In-Memory para mySQL.
 
