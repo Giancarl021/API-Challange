@@ -16,18 +16,6 @@ namespace Server.Controllers
         public PessoaController(Context context)
         {
             _context = context;
-
-            if (_context.Pessoas.Count() == 0)
-            {
-                _context.Pessoas.Add(new Pessoa
-                {
-                    Nome = "Jão",
-                    Email = "jaojao@jao.com",
-                    Nasc = "19/12/2019"
-                });
-                _context.SaveChanges();
-            }
-
         }
 
         [HttpGet]
