@@ -58,4 +58,14 @@ Versionador de código, utilizado para recuperar um código caso uma implementa�
 - A linguagem C# possui uma sintaxe diferente de qualquer das linguagens que estou habituado (parece uma mistura delas). A falta de conhecimento e experiência fez falta.
 - O bug do Visual Studio com a versão do .NET Core SDK (documentado [aqui](https://github.com/dotnet/sdk/issues/3124)) custou-me um tempo razoável (reinstalação do Visual Studio).
 - Não consegui conectar um banco de dados externo na aplicação, apenas utilizei o In-Memory Database da própria aplicação.
-- Não consegui completar o front-end devido a uma falha na requisição do ```POST``` e do ```PUT```.
+- Não consegui completar o front-end devido a uma falha na requisição do ```POST``` e do ```PUT```, não consegui identificar a falha a tempo de corrigir.
+
+### *TODO*
+
+- Requisições ```POST``` e ```PUT``` no arquivo [javascript](js/script.js).
+
+- Migrar de banco de dados In-Memory para mySQL.
+
+- Criar tela de edição e criação de pessoas.
+
+  
