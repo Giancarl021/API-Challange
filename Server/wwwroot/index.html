@@ -6,47 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>API-Challenge Client</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--    <link rel="icon" href="img/logo.png" type="image/x-icon">-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
     <script src="lib/jQuery.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
-    <h1 class="cc-title">API-Challenge Client</h1>
+    <h1 class="cc-title">API-CHALLENGE</h1>
     <div class="cc-container">
-        <form>
-            Ação
-            <select required onchange="showAction(this.value)">
-                <option value="" selected hidden>Selecione uma ação</option>
-                <option>Cadastrar</option>
-                <option>Editar</option>
-                <option>Listar</option>
-                <option>Pesquisar</option>
-            </select>
-            <div id="Cadastrar" style="display: none">
-                Nome:<input type="text" name="nome" required>
-                E-Mail:<input type="email" name="nome" required>
-                Data de Nascimento:<input type="date" name="nasc" required>
-            </div>
-            <div id="Editar" style="display: none">
-                Nome:<input type="text" name="nome" required>
-                E-Mail:<input type="email" name="nome" required>
-                Data de Nascimento:<input type="date" name="nasc" required>
-            </div>
-            <div id="Listar" style="display: none">
-                Nome:<input type="text" name="nome" required>
-                E-Mail:<input type="email" name="nome" required>
-                Data de Nascimento:<input type="date" name="nasc" required>
-            </div>
-            <div id="Pesquisar" style="display: none">
-                Nome:<input type="text" name="nome" required>
-                E-Mail:<input type="email" name="nome" required>
-                Data de Nascimento:<input type="date" name="nasc" required>
-            </div>
-            <button type="submit" onclick="callAPI('PUT')">Enviar</button>
-        </form>
+        <input type="text" style="width: 40%" id="search">
+        <button type="button" onclick="search($('input[name=\'filter\']:checked').val())">Pesquisar</button>
+        <br/>
+        <strong>Filtro</strong>
+        <input type="radio" name="filter" value="0" checked>Nenhum
+        <input type="radio" name="filter" value="1">Nome
+        <input type="radio" name="filter" value="2">Email
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>E-Mail</th>
+                <th>Data de Nascimento</th>
+                <th>Ações</th>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+<!--        <button type="button" onclick="getPessoas().then(d => renderTable(d))">Renderizar Tabela</button>-->
     </div>
+    <script>
+        getPessoas().then(d => renderTable(d))
+    </script>
 </body>
 
 </html>
