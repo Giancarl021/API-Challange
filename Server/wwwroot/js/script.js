@@ -15,6 +15,8 @@ async function getPessoas() {
 }
 
 async function addPessoa(name, email, nasc) { // NOT WORKING
+    alert('Função não implementada');
+    return;
     const ajax = await _getAJAX({
         url: request,
         method: 'POST',
@@ -30,6 +32,8 @@ async function addPessoa(name, email, nasc) { // NOT WORKING
 }
 
 async function editPessoa(id, name, email, nasc) { // NOT WORKING
+    alert('Função não implementada');
+    return;
     const ajax = await _getAJAX({
         url: `${request}/${id}`,
         method: 'PUT',
@@ -80,7 +84,7 @@ function renderTable(pessoas) {
     $('tr:not(:first)').remove();
     if(pessoas.length === 0) return;
     pessoas.forEach(e => {
-        $(`<tr><td>${e.nome}</td><td>${e.email}</td><td>${e.nasc}</td><td><button type="button" onclick="deletePessoa(${e.id})">Deletar</button></td></tr>`).appendTo('table');
+        $(`<tr><td>${e.nome}</td><td>${e.email}</td><td>${e.nasc}</td><td><button type="button" onclick="deletePessoa(${e.id})">Deletar</button><button type="button" onclick="editPessoa(${e.id})">Editar</button></td></tr>`).appendTo('table');
     });
 }
 
