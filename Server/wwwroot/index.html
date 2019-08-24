@@ -19,9 +19,16 @@
                 <th>Nome</th>
                 <th>E-Mail</th>
                 <th>Data de Nascimento</th>
+                <th>Ações</th>
             </tr>
         </table>
+        <br/>
+        <br/>
+<!--        <button type="button" onclick="getPessoas().then(d => renderTable(d))">Renderizar Tabela</button>-->
     </div>
+    <script>
+        getPessoas().then(d => renderTable(d))
+    </script>
 </body>
 
 </html>

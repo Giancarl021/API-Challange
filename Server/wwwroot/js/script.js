@@ -77,9 +77,8 @@ async function getPessoasByEmail(search) {
 }
 
 function renderTable(pessoas) {
-    console.log(pessoas);
     $('tr:not(:first)').remove();
     pessoas.forEach(e => {
-        $(`<tr><td>${e.nome}</td><td>${e.email}</td><td>${e.nasc}</td></tr>`).appendTo('table');
+        $(`<tr><td>${e.nome}</td><td>${e.email}</td><td>${e.nasc}</td><td><button type="button" onclick="deletePessoa(${e.id})">Deletar</button></td></tr>`).appendTo('table');
     });
 }
